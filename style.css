@@ -1,0 +1,29 @@
+#quad{
+    width: 80px;
+    height: 80px;
+    background-color: #EEE6FA;
+    position: absolute;
+}
+
+#bckg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    color: white;
+}
+
+#label
+{
+    font-size: 18px;
+    text-align: center;
+    
+}
