@@ -17,7 +17,6 @@
 
 p{
     font-family: 'Quicksand', sans-serif;
-    position: absolute;
     color: white;
 }
 
@@ -26,4 +25,48 @@ p{
     font-size: 18px;
     text-align: center;
     
+}
+
+#time{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, .3);
+    padding: 20px 50px;
+    border-radius: 16px;
+}
+
+#date-display {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 20%;
+}
+
+#hour-display {
+    font-size: 60px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 10%;
+    letter-spacing: 5px;
+}
+
+#minute-display {
+    font-size: 60px;
+    font-weight: 800;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    letter-spacing: 5px;
+}
+
+#second-display{
+    font-size: 20px;
+}
+
+#minsec-row{
+    display: flex;
+    align-items: flex-end;
 }
