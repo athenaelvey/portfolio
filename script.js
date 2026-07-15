@@ -32,6 +32,20 @@ portfolioBtn.addEventListener('mousedown', function(e){
 })
 
 document.addEventListener('mouseup', function(){
+    if(isDragging){
+        let btnRect = portfolioBtn.getBoundingClientRect();
+        let zoneRect = document.getElementById('dropzone').getBoundingClientRect();
+        let character = document.getElementById('character');
+
+        if(isOverlapping(btnRect, zoneRect)){
+            character.style.transform = 'translateY(300px)';
+            character.style.opacity = '0';
+
+            setTimeout(function(){
+                window.location.href = 'portfolio.html';
+            }, 600);
+        }
+    }
     isDragging = false;
 })
 
@@ -41,3 +55,12 @@ document.addEventListener('mousemove', function(e){
         portfolioBtn.style.top = (e.clientY - offsetY)+ 'px';
     }
 });
+
+function isOverlapping(rect1, rect2){
+    return!(
+        rect1.right < rect2.left ||
+        rect1.left > rect2.right ||
+        rect1.bottom < rect2.top ||
+        rect1.top > rect2.bottom
+    );
+}

@@ -12,6 +12,7 @@ html, body {
     position: absolute;
     top: -20px;
     right: -20px;
+    transition: transform 0.6s ease-in, opacity 0.9s ease-in;
 }
 
 #portfolio-btn{
@@ -54,6 +55,7 @@ html, body {
 p{
     font-family: 'Quicksand', sans-serif;
     color: white;
+    margin: 0;
 }
 
 #label
@@ -71,6 +73,9 @@ p{
     background-color: rgba(255, 255, 255, .3);
     padding: 20px 50px;
     border-radius: 16px;
+    min-width: 100px;
+    max-width: 100px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 #date-display {
@@ -100,10 +105,9 @@ p{
 
 #second-display{
     font-size: 20px;
-    margin-top: 10%;
 }
 
 #minsec-row{
     display: flex;
-    align-items: flex-end;
+    align-items: baseline;
 }
