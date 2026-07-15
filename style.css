@@ -1,8 +1,44 @@
-#quad{
-    width: 80px;
-    height: 80px;
-    background-color: #EEE6FA;
+html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+#character{
+    width: 60px;
+    height: 115px;
+    background-color: #4a2704;
+    border-radius: 50%;
     position: absolute;
+    top: -20px;
+    right: -20px;
+}
+
+#portfolio-btn{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background-color:#f2daeb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #5E2C04;
+    cursor: grab;
+    top: 60px;
+    right: -90px;
+    user-select: none;
+}
+
+#dropzone{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    bottom: 40px;
+    right: 40px;
+    border: 3px dashed rgba(255, 255, 255, .6);
+    border-radius: 8px;
 }
 
 #bckg{
@@ -38,7 +74,7 @@ p{
 }
 
 #date-display {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     text-align: center;
     margin-top: 0%;
@@ -64,6 +100,7 @@ p{
 
 #second-display{
     font-size: 20px;
+    margin-top: 10%;
 }
 
 #minsec-row{
