@@ -1,0 +1,80 @@
+p{
+    font-family: 'Quicksand', sans-serif;
+    color: #5c4033;
+    margin: 0;
+}
+
+body{
+    background-color: #fffdd0;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+#main-nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    diplay: flex;
+    gap: 12px;
+}
+
+#main-nav a{
+    background-color: #eaa8b7;
+    color: #5c4033;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    letter-spacing: 1px;
+}
+
+#about, #skills, #projects, #experience, #contact {
+    min-height: 100vh;
+    display: flex;
+    flex-directioN: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#about-content{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1000px;
+    box-shadow: 15px 15px 25px -8px #abc5ae;
+    padding: 1.5rem;
+}
+
+#headshot{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    object-fit: cover;
+    border-radius: 16px;
+    flex-shrink: 0;
+    border: 6px solid #cbdbcd;
+}
+
+#about-title{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #eaa8b7;
+    border-bottom: 3px solid #eaa8b7;
+    padding-bottom: 12px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+.bio-text {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.highlight {
+    color: #9bbb8a;
+}
