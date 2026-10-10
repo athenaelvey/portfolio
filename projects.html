@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Athena Elvey</title>
+  <meta name="description" content="Athena Elvey, Computer Science and Cognitive Science student at RPI. Front-end and full-stack development.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfoliostyle.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="topbar">
+    <a class="wordmark" href="home.html">Athena Elvey</a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content" class="page">
+    <h1>Projects</h1>
+    <ul class="entries">
+      <li class="entry">
+        <div class="entry-body">
+          <div class="entry-head">
+            <h2>Chronova</h2>
+            <span class="entry-links">
+              <a href="https://github.com/athenaelvey/chronova" target="_blank" rel="noopener">GitHub</a>
+            </span>
+          </div>
+          <ul class="bullets">
+            <li>Architected a full-stack application over the ATNF Pulsar Catalogue: a React/Vite frontend, a FastAPI backend with Pydantic-validated request/response models, and a containerized (Docker) PostgreSQL database with Alembic-managed schema migrations.</li>
+            <li>Designed a dynamic query builder translating arbitrary user filter conditions into SQLAlchemy expressions via a REST API for flexible, structured search, and automated live data ingestion via psrqpy.</li>
+            <li>Built interactive 3D and data visualizations with Three.js and Plotly, turning raw catalogue data into an explorable interface.</li>
+          </ul>
+          <p class="tags">React · Vite · FastAPI · PostgreSQL · SQLAlchemy · Three.js · Plotly</p>
+        </div>
+      </li>
+      <li class="entry has-media">
+        <div class="entry-body">
+          <div class="entry-head">
+            <h2>Daily Cognitive Load Tracker</h2>
+            <span class="entry-links">
+              <a href="https://daily-cognitive-load-tracker.streamlit.app/" target="_blank" rel="noopener">Live demo</a>
+              <a href="https://github.com/athenaelvey/daily-cognitive-load-tracker" target="_blank" rel="noopener">GitHub</a>
+            </span>
+          </div>
+          <ul class="bullets">
+            <li>Built and deployed a wellness tracking app for logging and visualizing daily stress, energy, and focus levels with streak tracking and pattern-based alerts.</li>
+            <li>Implemented NumPy linear regression for real-time trend lines across metrics, with CSV persistence and a live Streamlit Cloud deployment.</li>
+            <li>Designed interactive Altair visualizations to surface focus, stress, and energy trends over time.</li>
+          </ul>
+          <p class="tags">Python · Streamlit · Pandas · Altair · NumPy</p>
+          <p class="term">Summer 2026</p>
+        </div>
+        <div class="project-media">
+          <button type="button" class="thumb" aria-label="Enlarge Daily Cognitive Load Tracker, screenshot 1">
+            <img src="images/dclt1-img.png" alt="Daily Cognitive Load Tracker, screenshot 1" loading="lazy">
+          </button>
+          <button type="button" class="thumb" aria-label="Enlarge Daily Cognitive Load Tracker, screenshot 2">
+            <img src="images/dclt2-img.png" alt="Daily Cognitive Load Tracker, screenshot 2" loading="lazy">
+          </button>
+        </div>
+      </li>
+      <li class="entry has-media">
+        <div class="entry-body">
+          <div class="entry-head">
+            <h2>Hospital Length-of-Stay Prediction Model</h2>
+          </div>
+          <ul class="bullets">
+            <li>Analyzed healthcare infrastructure data on a team to identify relationships between medical equipment availability and patient length of stay; benchmarked linear regression, polynomial regression, and a tuned neural network (TensorFlow/Keras) to optimize predictive performance.</li>
+          </ul>
+          <p class="tags">Python · Pandas · scikit-learn · TensorFlow/Keras</p>
+          <p class="term">Summer 2023</p>
+        </div>
+        <div class="project-media">
+          <button type="button" class="thumb" aria-label="Enlarge Hospital length-of-stay model, screenshot 1">
+            <img src="images/healthcare1-img.png" alt="Hospital length-of-stay model, screenshot 1" loading="lazy">
+          </button>
+          <button type="button" class="thumb" aria-label="Enlarge Hospital length-of-stay model, screenshot 2">
+            <img src="images/healthcare2-img.png" alt="Hospital length-of-stay model, screenshot 2" loading="lazy">
+          </button>
+        </div>
+      </li>
+    </ul>
+
+    <dialog class="lightbox" aria-label="Enlarged image">
+      <div class="lightbox-inner">
+        <button type="button" class="lightbox-close btn">Close</button>
+        <img src="" alt="">
+        <p class="lightbox-caption"></p>
+      </div>
+    </dialog>
+    <script src="lightbox.js"></script>
+  </main>
+
+  <footer>
+    <p>© 2026 Athena Elvey</p>
+  </footer>
+</body>
+</html>
