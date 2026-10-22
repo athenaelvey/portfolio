@@ -9,16 +9,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="portfoliostyle.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
 
   <header class="topbar">
-    <a class="wordmark" href="home.html">Athena Elvey</a>
+    <a class="wordmark" href="index.html">Athena Elvey</a>
     <nav aria-label="Main">
       <ul class="nav-links">
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html" aria-current="page">Projects</a></li>
@@ -36,6 +36,7 @@
           <div class="entry-head">
             <h2>Chronova</h2>
             <span class="entry-links">
+              <a href="https://chronovapt.vercel.app/" target="_blank" rel="noopener">Live demo</a>
               <a href="https://github.com/athenaelvey/chronova" target="_blank" rel="noopener">GitHub</a>
             </span>
           </div>
@@ -45,6 +46,7 @@
             <li>Built interactive 3D and data visualizations with Three.js and Plotly, turning raw catalogue data into an explorable interface.</li>
           </ul>
           <p class="tags">React · Vite · FastAPI · PostgreSQL · SQLAlchemy · Three.js · Plotly</p>
+          <p class="term">Fall 2026</p>
         </div>
       </li>
       <li class="entry has-media">
@@ -76,6 +78,30 @@
       <li class="entry has-media">
         <div class="entry-body">
           <div class="entry-head">
+            <h2>Sunny</h2>
+            <span class="entry-links">
+              <a href="https://github.com/athenaelvey/sunny" target="_blank" rel="noopener">GitHub</a>
+            </span>
+          </div>
+          <ul class="bullets">
+            <li>An (unaffiliated) Java Swing game inspired by OMORI, built as my AP Computer Science A final. Players work through four character-driven mini-games (drag-and-drop, timing-based, and catch mechanics) leading to a story finale.</li>
+            <li>Built a custom rendering loop using paintComponent/Graphics2D, a dedicated thread for fixed-tick animation and audio timing, and direct keyboard/mouse input handling across several self-contained game object classes.</li>
+          </ul>
+          <p class="tags">Java · Swing</p>
+          <p class="term">Spring 2025</p>
+        </div>
+        <div class="project-media">
+          <button type="button" class="thumb" aria-label="Enlarge Sunny game, screenshot 1">
+            <img src="images/sunny5-img.png" alt="Sunny game, screenshot 1" loading="lazy">
+          </button>
+          <button type="button" class="thumb" aria-label="Enlarge Sunny game, screenshot 2">
+            <img src="images/sunny3-img.png" alt="Sunny game, screenshot 2" loading="lazy">
+          </button>
+        </div>
+      </li>
+      <li class="entry has-media">
+        <div class="entry-body">
+          <div class="entry-head">
             <h2>Hospital Length-of-Stay Prediction Model</h2>
           </div>
           <ul class="bullets">
@@ -93,6 +119,52 @@
           </button>
         </div>
       </li>
+      <li class="entry has-media">
+        <div class="entry-body">
+          <div class="entry-head">
+            <h2>The Cat's Meow</h2>
+            <span class="entry-links">
+              <a href="https://github.com/athenaelvey/the-cats-meow" target="_blank" rel="noopener">GitHub</a>
+            </span>
+          </div>
+          <ul class="bullets">
+            <li>A cat café simulation game built in Code.org App Lab for my AP Computer Science Principles exam. Players take orders, select ingredients, and complete a mixing mini-game, and correct combinations unlock new café cats.</li>
+            <li>Built recipe-matching logic that checks ingredient combinations regardless of selection order, across a multi-screen game flow from tutorial to ending.</li>
+          </ul>
+          <p class="tags">JavaScript · Code.org App Lab</p>
+          <p class="term">Spring 2024</p>
+        </div>
+        <div class="project-media">
+          <button type="button" class="thumb" aria-label="Enlarge The Cat's Meow, screenshot 1">
+            <img src="images/catsmeow1-img.png" alt="The Cat's Meow, screenshot 1" loading="lazy">
+          </button>
+          <button type="button" class="thumb" aria-label="Enlarge The Cat's Meow, screenshot 2">
+            <img src="images/catsmeow2-img.png" alt="The Cat's Meow, screenshot 2" loading="lazy">
+          </button>
+        </div>
+      </li>
+      <li class="entry has-media">
+        <div class="entry-body">
+          <div class="entry-head">
+            <h2>Bad End Theatre</h2>
+          </div>
+          <ul class="bullets">
+            <li>My first project: an (unaffiliated) Java text adventure built for my Intro to Computer Science final and inspired by Bad End Theater. Players choose to play as the Hero, Maiden, Underling, or Overlord, pick a trait, and make choices that branch the story.</li>
+            <li>Wrote all of the branching logic with conditionals and Swing option dialogs, leading to 30+ different endings across the four characters.</li>
+          </ul>
+          <p class="tags">Java · Swing</p>
+          <p class="term">Spring 2023</p>
+        </div>
+        <div class="project-media">
+          <button type="button" class="thumb" aria-label="Enlarge Bad End Theatre game, screenshot 1">
+            <img src="images/bad-end-theatre1-img.png" alt="Bad End Theatre game, screenshot 1" loading="lazy">
+          </button>
+          <button type="button" class="thumb" aria-label="Enlarge Bad End Theatre game, screenshot 2">
+            <img src="images/bad-end-theatre2-img.png" alt="Bad End Theatre game, screenshot 2" loading="lazy">
+          </button>
+        </div>
+      </li>
+
     </ul>
 
     <dialog class="lightbox" aria-label="Enlarged image">
